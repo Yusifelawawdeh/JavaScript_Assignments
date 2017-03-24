@@ -1,0 +1,17 @@
+alert("Welcome to the \"new new\" madlibs for super duper serious adults");
+alert("We are going to start with asking a few questions so dont be shy");
+var noun = prompt("Are you a Rogue, Wizard, Warrior, maybe a Warlock? i mean i think warlock's are pretty cool but pick a hero... any one you like...");
+alert("OK sounds interesting... ugh... let me get the second question");
+alert("...");
+alert("shuffeling... aha!! found it !! Phew.. lets move forward to the next question")
+var verb = prompt("Tell me what does Your mystical " + noun + " Do for a living?");
+alert("Really ?!?!?!");
+alert("I mean i had a " + noun + " do a " + verb + " once, as a story theme you know... i thought it was pretty unique... \"sobs\" ");
+alert("like really unique, you know? \'tears in the rain\"");
+alert("like write a script for a movie unique \"dude chill out its mad libs not the sum of all fears\" ");
+alert("oh well, any way..");
+alert("now for the difficult part");
+var adjective = prompt("tell me... how would you describe this " + noun + " of yours, perhaps charming ?, or maybe clever?" );
+alert("aha !! interesting choice a " + noun + " that can " + verb + " and is " + adjective + ". Interesting indeed..");
+alert("ok your story pops up when you hit the ok button, sound cool?");
+document.write("<h1>There once was</h1><br><h2> a " + noun + " that was " + adjective + " and all the people thought, wow, maybe the " + noun + " could " + verb + " all the Dragons here at the eldritch dimension</h2>");

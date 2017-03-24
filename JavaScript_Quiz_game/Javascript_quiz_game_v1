@@ -1,0 +1,147 @@
+
+/* Comment 1--
+these 2 Variables help in calculating 
+how many questions are Left for the player
+*/
+var questions = 5;
+var questionsLeft = "[" + questions + " questions Left]";
+/* Comment 2--
+These 3 variables are responsible for
+keeping the score tally and making it
+persistant for later use, also they 
+are used to display the current score 
+during the quiz.
+*/
+var rightAnswers = 0;
+var wrongAnswers = 0;
+var score = "   [" + rightAnswers + " right |  " + wrongAnswers + " wrong ]";
+    
+/* Comment 3--
+This section is the question section that holds the prompt
+and also contains if else logic to determin whether the player
+guessed the correct answer, or incorrect answer. After
+the if else logic the code runs through on how many questions
+are left as well as keeping the updating score persistant through
+the quiz.
+*/
+var questionOne = prompt("What is the second digit in PI after the decimal point? " + questionsLeft + score);
+  if ( parseInt(questionOne) === 4  ){
+      var rightGuess = alert("Correct! ");
+      rightAnswers += 1;
+} else {
+      var wrongGuess = alert("Sorry... ");
+      wrongAnswers += 1;
+}
+questions -= 1;
+questionsLeft = "[" + questions + " questions Left]";
+score = "   [" + rightAnswers + " right | " + wrongAnswers + " wrong ]";
+
+
+/* Comment 4--
+See commment 3 for below.
+*/
+var questionTwo = prompt("How many does an Octocopter have? " + questionsLeft + score);
+  if ( parseInt(questionTwo) === 8  ){
+      var rightGuess = alert("Correct! ");
+      rightAnswers += 1;
+} else {
+      var wrongGuess = alert("Sorry... ");
+      wrongAnswers += 1;
+}
+questions -= 1;
+questionsLeft = "[" + questions + " questions Left]";
+score = "   [" + rightAnswers + " right | " + wrongAnswers + " wrong ]";
+
+
+/* Comment 5--
+See commment 3 for below.
+*/
+var questionThree = prompt("What part of the computer does the chrome browser like most? " + questionsLeft + score);
+  if ( questionThree.toLowerCase() === "memory"  ){
+      var rightGuess = alert("Correct! ");
+      rightAnswers += 1;
+} else {
+      var wrongGuess = alert("Sorry... ");
+      wrongAnswers += 1;
+}
+questions -= 1;
+questionsLeft = "[" + questions + " questions Left]";
+score = "   [" + rightAnswers + " right | " + wrongAnswers + " wrong ]";
+
+
+/* Comment 6--
+See commment 3 for below.
+*/
+var questionFour = prompt("Which linux security distro can you install on top of Android OS, in a mobile smart phone? " + questionsLeft + score);
+  if ( questionFour.toLowerCase() === "kali nethunter"  ){
+      var rightGuess = alert("Correct! ");
+      rightAnswers += 1;
+} else {
+      var wrongGuess = alert("Sorry... ");
+      wrongAnswers += 1;
+}
+questions -= 1;
+questionsLeft = "[" + questions + " questions Left]";
+score = "   [" + rightAnswers + " right | " + wrongAnswers + " wrong ]";
+
+
+/* Comment 7--
+See commment 3 for below.
+*/
+var questionFive = prompt("When naming variables in JavaScript, What kind of animal should you always remember? " + questionsLeft + score);
+  if ( questionFive.toLowerCase() === "camels"  ){
+      var rightGuess = alert("Correct! ");
+      rightAnswers += 1;
+} else {
+      var wrongGuess = alert("Sorry... ");
+      wrongAnswers += 1;
+}
+questions -= 1;
+questionsLeft = "[" + questions + " questions Left]";
+score = "   [" + rightAnswers + " right | " + wrongAnswers + " wrong ]";
+
+/* Comment 8--
+a window alert to let the player know
+they have completed the quiz
+*/
+alert("Your quiz results are in...");
+
+/* Comment 9--
+Logic if, else if, else statement to get the
+numeric score and pair it to a different string
+ie "5 out of 5 is gold trophy"
+it relies on the calculatedAnswer variable to get
+the correct reward for the score. 
+*/
+var calculatedAnswer = 5 - wrongAnswers;
+var scoreReward;
+  if ( calculatedAnswer === 5 ){
+      scoreReward = "Gold Trophy !!!";
+  } else if ( calculatedAnswer === 4 ) {
+      scoreReward = "Silver Trophy !!";
+  } else if ( calculatedAnswer === 3 ) {
+      scoreReward = "Bronze Trophy !";
+  } else if ( calculatedAnswer <= 2 ) {
+      scoreReward = "oh dear, perhaps... you could do the quiz over...";
+  } else {
+  
+  }
+
+/* Comment 10--
+a simple variable to contain the completion
+string congratulating the player. 
+and also receiving the correct scoreReward variable value
+from the logic before.
+*/
+var completedQuiz = "<h2> Your Score is " + calculatedAnswer + "/5 " + " here you have, won the " + scoreReward + "</h2>";
+    
+    
+/* Comment 11--
+A document write command to print the last variable 
+containing the appropriate strings and score
+for the player
+*/    
+document.write(completedQuiz);
+
+
+

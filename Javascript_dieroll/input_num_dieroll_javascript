@@ -1,0 +1,4 @@
+var userNum = prompt("Sacrifice an integer for the random number generator");
+var parsedNum = parseInt(userNum);
+var ranNumGen = Math.floor(Math.random() * parsedNum) + Math.floor(Math.random() * 100);
+document.write(ranNumGen);
