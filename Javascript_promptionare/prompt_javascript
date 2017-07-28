@@ -1,7 +1,9 @@
-var answer = prompt("what programming language is also the name of a snake");
+  var answer = prompt("what programming language is also the name of a snake");
 
-  if( answer.toLowerCase() === "python"){
+  if( answer.toLowerCase() === "python")
+  {
   document.write("Corecto Mundo Buddy");
-} else {
-  document.write("Nope... that appears to be incorrect.");
-}
+  } 
+  else {
+        document.write("Nope... that appears to be incorrect.");
+       }
