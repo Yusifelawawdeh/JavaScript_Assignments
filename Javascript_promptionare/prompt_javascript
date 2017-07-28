@@ -2,8 +2,8 @@
 
   if( answer.toLowerCase() === "python")
   {
-  document.write("Corecto Mundo Buddy");
+      document.write("Corecto Mundo Buddy");
   } 
   else {
-        document.write("Nope... that appears to be incorrect.");
+            document.write("Nope... that appears to be incorrect.");
        }
